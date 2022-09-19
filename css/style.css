@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+.content-first{
+    background-color:white;
+    border-radius: 15px;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content-first:before{
+    content: "";
+    position: absolute;
+    background-color:#6b2e69 ;
+    width: 40%;
+    height: 100%;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-primario{
+    color:white
+}
+
+.description{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: 300;
+    color: white;
+    line-height: 30px;
+}
+
+.btn{
+    border-radius:15px;
+    text-transform: uppercase;
+    color:white;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.btn-primario{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.btn-primario:hover{
+    background-color: white;
+    color:#6b2e69;
+}
+
+.first-column{
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 10;
+}
+
+.second-column{
+    flex: 2 0 auto;
+}
+
+.list-social-midia{
+    display: flex;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-second{
+   position: absolute;
+   display: none;
+}

@@ -1,71 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
 </head>
 
 <body>
-    <main>
-        <div class="first-column">
-            <h2 class="title.login">Bem Vindo de Volta!</h2>
-            <p class="description">Mantenha conectado conosco</p>
-            <p class="description">Porfavor logue com suas informações pessoais</p>
-            <button class="btn">Registrar</button>
-        </div>
-
-        <div class="second-column">
-            <h2 class="title.login">Criar Conta</h2>
-            <div class="social-midia"></div>
-            <ul>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#"></a>google+</li>
-                <li><a href="#"></a>linkedin</li>
-            </ul>
-        </div>
-        <p class="description">ou utilize seu email para o registro</p>
-        <div class="form">
-            <input type="text" placeholder="Nome">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Senha">
-            <button class="btn">Registrara-se</button>
-        </div>
-
-        <div class="content second-content">
+    <div class="container">
+        <div class="content-first">
             <div class="first-column">
-                <h2 class="title.login">Olá, amigo!</h2>
-                <p class="description">Insira suas informaçoes peossoais</p>
+                <h2 class="title title-primario">Bem vindo de volta!</h2>
+                <p class="description">Mantenha-se conctado conosco</p>
+                <p class="description">Por favor logue com suas informações pessoais</p>
+                <button class="btn btn-primario">Registrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title">Criar sua conta</h2>
+                <div class="social-midia">
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Google+</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+                <p class="description">ou ultilize seu email para se registrar</p>
+                <div class="form">
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Senha">
+                    <button class="btn">Registrar-se</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-second">
+            <div class="first-column">
+                <h2 class="title">Olá, amigo!</h2>
+                <p class="description">Insira seus dados pessoais </p>
                 <p class="description">Comece sua jornada conosco</p>
                 <button class="btn">Entrar</button>
             </div>
-    
             <div class="second-column">
-                <h2 class="title.login">Entre com sua conta</h2>
-                <div class="social-midia"></div>
-                <ul>
-                    <li><a href="#">facebook</a></li>
-                    <li><a href="#"></a>google+</li>
-                    <li><a href="#"></a>linkedin</li>
-                </ul>
+                <h2 class="title">começar como desenvolvedor</h2>
+                <div class="social-midia">
+                    <ul class="list-social-midia">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Google+</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+                <p class="description">ou ultilize sua conta de email</p>
+                <div class="form">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Senha">
+                    <a href="#">esqueceu sua senha?</a>
+                    <button class="btn">Entrar</button>
+                </div>
             </div>
-            <p class="description">entre com seus email</p>
-            <div class="form">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <a href="#">Esqueceu sua senha?</a>
-                <button class="btn">Entrar</button>
         </div>
-
-    </main>
-    <footer>
-    </footer>
+    </div>
+    
 </body>
-
 </html>
