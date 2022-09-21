@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Login</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="content-first">
+        <div class="content first-content">
             <div class="first-column">
-                <h2 class="title title-primario">Bem vindo de volta!</h2>
-                <p class="description">Mantenha-se conctado conosco</p>
-                <p class="description">Por favor logue com suas informações pessoais</p>
-                <button class="btn btn-primario">Registrar</button>
+                <h2 class="title title-primary">Bem vindo de volta!</h2>
+                <p class="description description-primary">Mantenha-se conctado conosco</p>
+                <p class="description description-primary">Por favor logue com suas informações pessoais</p>
+                <button class="btn btn-primary">Registrar</button>
             </div>
             <div class="second-column">
-                <h2 class="title">Criar sua conta</h2>
-                <div class="social-midia">
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Google+</a></li>
-                        <li><a href="#">Linkedin</a></li>
+                <h2 class="title title-second">Criar sua conta</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
                     </ul>
                 </div>
-                <p class="description">ou ultilize seu email para se registrar</p>
-                <div class="form">
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Senha">
-                    <button class="btn">Registrar-se</button>
-                </div>
+                <p class="description description-second">ou utilize seu email para se registrar</p>
+                <form class="form">
+                    <label class="label-input">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+                    <label class="label-input">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    <label class="label-input">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    <button class="btn btn-second">Registrar-se</button>
+                </form>
             </div>
-        </div>
+            </div>
 
-        <div class="content-second">
+            <div class="content content-second">
             <div class="first-column">
                 <h2 class="title">Olá, amigo!</h2>
                 <p class="description">Insira seus dados pessoais </p>
@@ -62,6 +80,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
+
 </html>
