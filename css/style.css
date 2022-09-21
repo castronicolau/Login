@@ -19,18 +19,17 @@ body{
     background-color: #ecf0f1;
 }
 
-.content-first{
-    background-color:white;
+.content{
+    background-color:#fff;
     border-radius: 15px;
-    width: 80%;
+    width: 960px;
     height: 50%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
-.content-first:before{
+.content::before{
     content: "";
     position: absolute;
     background-color:#6b2e69 ;
@@ -44,9 +43,14 @@ body{
     text-transform: capitalize;
 }
 
-.title-primario{
+.title-primary{
     color:white
 }
+
+.title-second{
+    color:#6b2e69;
+}
+
 
 .description{
     font-size: 14px;
@@ -56,6 +60,14 @@ body{
     line-height: 30px;
 }
 
+.description-primary{
+    color: #fff;
+}
+
+.description-second{
+    color: #7f8c8d;
+}
+
 .btn{
     border-radius:15px;
     text-transform: uppercase;
@@ -63,9 +75,14 @@ body{
     font-size: 10px;
     padding: 10px 50px;
     cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
 }
 
-.btn-primario{
+.btn-primary{
     background-color: transparent;
     border: 1px solid white;
 }
@@ -73,6 +90,21 @@ body{
 .btn-primario:hover{
     background-color: white;
     color:#6b2e69;
+}
+
+.btn-second{
+    background-color: #6b2e69;
+    border: 1px solid #6b2e69;
+}
+
+.btn-second:hover{
+    background-color: #fff;
+    border: 1px solid #6b2e69;
+    color: #6b2e69;
+}
+
+.first-content{
+    display: flex;
 }
 
 .first-column{
@@ -83,15 +115,59 @@ body{
 
 .second-column{
     flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.list-social-midia{
+.social-media{
+    margin: 1rem 0;
+}
+
+.list-social-media{
     display: flex;
+    list-style-type: none;
+}
+
+.item-social-media{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.item-social-media:not(:first-child){
+    margin-left: 10px;
+}
+
+.item-social-media a{
+    color: #95a5a6;
 }
 
 .form{
     display: flex;
     flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1; 
+}
+
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-modify{
+    color: #7f8c8d;
+    padding: 0 5px;
 }
 
 .content-second{
