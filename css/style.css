@@ -32,9 +32,14 @@ body{
 .content::before{
     content: "";
     position: absolute;
-    background-color:#6b2e69 ;
+    background-color:#6b2e69;
     width: 40%;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 60%;
 }
 
 .title{
@@ -105,6 +110,7 @@ body{
 
 .first-content{
     display: flex;
+    display: none;
 }
 
 .first-column{
@@ -124,6 +130,17 @@ body{
     margin: 1rem 0;
 }
 
+.link-social-media:hover .item-social-media{
+    background-color: #6b2e69;
+    color: #fff;
+    border-color: #6b2e69;
+}
+
+
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+
 .list-social-media{
     display: flex;
     list-style-type: none;
@@ -136,12 +153,6 @@ body{
     height: 35px;
     line-height: 35px;
     text-align: center;
-}
-.item-social-media:not(:first-child){
-    margin-left: 10px;
-}
-
-.item-social-media a{
     color: #95a5a6;
 }
 
@@ -172,5 +183,24 @@ body{
 
 .content-second{
    position: absolute;
-   display: none;
+   display: flex;
+}
+
+.content-second .first-column{
+    order: 2;
+}
+
+.content-second .second-column{
+    order: 1;
+}
+
+.password{
+    color: #34495e;
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+}
+
+.password::first-letter{
+    text-transform: capitalize;
 }
